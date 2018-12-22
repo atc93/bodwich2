@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+  
+<body>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="js/variablesGenerales.js"></script>
+    <script src="js/doctrine.js"></script>
+    
+    <div class="container">
+    <h3 align="center">Bodwich 2.0 by Carambar & Jambe de bois</h3>
+    </div>
+
+<div class="container">
+  <h4>Bodwich</h4>
+
+  <div class="divContCreaSolo" style="background-color:azure" border-style="solid">
+  <p>Choix de la race</p>
+
+<fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0">Sélectionner une race : </legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+          <label class="form-check-label" for="gridRadios1">
+            Mutants
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+          <label class="form-check-label" for="gridRadios2">
+            Les minis chapelains violeurs
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+          <label class="form-check-label" for="gridRadios3">
+            La confrérie des rideaux de douches
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+</div>
+
+<div class="divContCreaSolo" style="background-color:lightgrey">
+  <p>Choix du type de société</p>
+  <div class="form-group">
+    <label for="doctrinePolitiqueAdopt">Sélectionner un modèle de société :</label>
+    <select class="form-control-file" id="doctrinePolitiqueAdopt">
+      <option id ="politAleat1"></option>
+      <option id ="politAleat2"></option>
+      <option id ="politAleat3"></option>         
+    </select>
+  </div>
+</div>
+  
+  <div class="divContCreaSolo" style="background-color:aliceblue">
+  <p>Choix de la religion</p>
+</div>
+
+<button type="submit" class="btn btn-primary" onclick="submitCreationReady();">Submit</button>
+</div>
+
+<div class="container">
+  <h4>Récapitulatif de votre empire : </h4>
+  <h5 id="recapRace"></h5>
+  <h5 id="recapPolitique"></h5>  
+</div>
+ 
+    
+</body>
+</html>
